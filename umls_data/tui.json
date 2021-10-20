@@ -1,0 +1,637 @@
+{
+    "T052": {
+        "group_abbr": "ACTI",
+        "group_name": "Activities & Behaviors",
+        "type_name": "Activity"
+    },
+    "T053": {
+        "group_abbr": "ACTI",
+        "group_name": "Activities & Behaviors",
+        "type_name": "Behavior"
+    },
+    "T056": {
+        "group_abbr": "ACTI",
+        "group_name": "Activities & Behaviors",
+        "type_name": "Daily or Recreational Activity"
+    },
+    "T051": {
+        "group_abbr": "ACTI",
+        "group_name": "Activities & Behaviors",
+        "type_name": "Event"
+    },
+    "T064": {
+        "group_abbr": "ACTI",
+        "group_name": "Activities & Behaviors",
+        "type_name": "Governmental or Regulatory Activity"
+    },
+    "T055": {
+        "group_abbr": "ACTI",
+        "group_name": "Activities & Behaviors",
+        "type_name": "Individual Behavior"
+    },
+    "T066": {
+        "group_abbr": "ACTI",
+        "group_name": "Activities & Behaviors",
+        "type_name": "Machine Activity"
+    },
+    "T057": {
+        "group_abbr": "ACTI",
+        "group_name": "Activities & Behaviors",
+        "type_name": "Occupational Activity"
+    },
+    "T054": {
+        "group_abbr": "ACTI",
+        "group_name": "Activities & Behaviors",
+        "type_name": "Social Behavior"
+    },
+    "T017": {
+        "group_abbr": "ANAT",
+        "group_name": "Anatomy",
+        "type_name": "Anatomical Structure"
+    },
+    "T029": {
+        "group_abbr": "ANAT",
+        "group_name": "Anatomy",
+        "type_name": "Body Location or Region"
+    },
+    "T023": {
+        "group_abbr": "ANAT",
+        "group_name": "Anatomy",
+        "type_name": "Body Part, Organ, or Organ Component"
+    },
+    "T030": {
+        "group_abbr": "ANAT",
+        "group_name": "Anatomy",
+        "type_name": "Body Space or Junction"
+    },
+    "T031": {
+        "group_abbr": "ANAT",
+        "group_name": "Anatomy",
+        "type_name": "Body Substance"
+    },
+    "T022": {
+        "group_abbr": "ANAT",
+        "group_name": "Anatomy",
+        "type_name": "Body System"
+    },
+    "T025": {
+        "group_abbr": "ANAT",
+        "group_name": "Anatomy",
+        "type_name": "Cell"
+    },
+    "T026": {
+        "group_abbr": "ANAT",
+        "group_name": "Anatomy",
+        "type_name": "Cell Component"
+    },
+    "T018": {
+        "group_abbr": "ANAT",
+        "group_name": "Anatomy",
+        "type_name": "Embryonic Structure"
+    },
+    "T021": {
+        "group_abbr": "ANAT",
+        "group_name": "Anatomy",
+        "type_name": "Fully Formed Anatomical Structure"
+    },
+    "T024": {
+        "group_abbr": "ANAT",
+        "group_name": "Anatomy",
+        "type_name": "Tissue"
+    },
+    "T116": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Amino Acid, Peptide, or Protein"
+    },
+    "T195": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Antibiotic"
+    },
+    "T123": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Biologically Active Substance"
+    },
+    "T122": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Biomedical or Dental Material"
+    },
+    "T103": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Chemical"
+    },
+    "T120": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Chemical Viewed Functionally"
+    },
+    "T104": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Chemical Viewed Structurally"
+    },
+    "T200": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Clinical Drug"
+    },
+    "T196": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Element, Ion, or Isotope"
+    },
+    "T126": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Enzyme"
+    },
+    "T131": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Hazardous or Poisonous Substance"
+    },
+    "T125": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Hormone"
+    },
+    "T129": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Immunologic Factor"
+    },
+    "T130": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Indicator, Reagent, or Diagnostic Aid"
+    },
+    "T197": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Inorganic Chemical"
+    },
+    "T114": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Nucleic Acid, Nucleoside, or Nucleotide"
+    },
+    "T109": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Organic Chemical"
+    },
+    "T121": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Pharmacologic Substance"
+    },
+    "T192": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Receptor"
+    },
+    "T127": {
+        "group_abbr": "CHEM",
+        "group_name": "Chemicals & Drugs",
+        "type_name": "Vitamin"
+    },
+    "T185": {
+        "group_abbr": "CONC",
+        "group_name": "Concepts & Ideas",
+        "type_name": "Classification"
+    },
+    "T077": {
+        "group_abbr": "CONC",
+        "group_name": "Concepts & Ideas",
+        "type_name": "Conceptual Entity"
+    },
+    "T169": {
+        "group_abbr": "CONC",
+        "group_name": "Concepts & Ideas",
+        "type_name": "Functional Concept"
+    },
+    "T102": {
+        "group_abbr": "CONC",
+        "group_name": "Concepts & Ideas",
+        "type_name": "Group Attribute"
+    },
+    "T078": {
+        "group_abbr": "CONC",
+        "group_name": "Concepts & Ideas",
+        "type_name": "Idea or Concept"
+    },
+    "T170": {
+        "group_abbr": "CONC",
+        "group_name": "Concepts & Ideas",
+        "type_name": "Intellectual Product"
+    },
+    "T171": {
+        "group_abbr": "CONC",
+        "group_name": "Concepts & Ideas",
+        "type_name": "Language"
+    },
+    "T080": {
+        "group_abbr": "CONC",
+        "group_name": "Concepts & Ideas",
+        "type_name": "Qualitative Concept"
+    },
+    "T081": {
+        "group_abbr": "CONC",
+        "group_name": "Concepts & Ideas",
+        "type_name": "Quantitative Concept"
+    },
+    "T089": {
+        "group_abbr": "CONC",
+        "group_name": "Concepts & Ideas",
+        "type_name": "Regulation or Law"
+    },
+    "T082": {
+        "group_abbr": "CONC",
+        "group_name": "Concepts & Ideas",
+        "type_name": "Spatial Concept"
+    },
+    "T079": {
+        "group_abbr": "CONC",
+        "group_name": "Concepts & Ideas",
+        "type_name": "Temporal Concept"
+    },
+    "T203": {
+        "group_abbr": "DEVI",
+        "group_name": "Devices",
+        "type_name": "Drug Delivery Device"
+    },
+    "T074": {
+        "group_abbr": "DEVI",
+        "group_name": "Devices",
+        "type_name": "Medical Device"
+    },
+    "T075": {
+        "group_abbr": "DEVI",
+        "group_name": "Devices",
+        "type_name": "Research Device"
+    },
+    "T020": {
+        "group_abbr": "DISO",
+        "group_name": "Disorders",
+        "type_name": "Acquired Abnormality"
+    },
+    "T190": {
+        "group_abbr": "DISO",
+        "group_name": "Disorders",
+        "type_name": "Anatomical Abnormality"
+    },
+    "T049": {
+        "group_abbr": "DISO",
+        "group_name": "Disorders",
+        "type_name": "Cell or Molecular Dysfunction"
+    },
+    "T019": {
+        "group_abbr": "DISO",
+        "group_name": "Disorders",
+        "type_name": "Congenital Abnormality"
+    },
+    "T047": {
+        "group_abbr": "DISO",
+        "group_name": "Disorders",
+        "type_name": "Disease or Syndrome"
+    },
+    "T050": {
+        "group_abbr": "DISO",
+        "group_name": "Disorders",
+        "type_name": "Experimental Model of Disease"
+    },
+    "T033": {
+        "group_abbr": "DISO",
+        "group_name": "Disorders",
+        "type_name": "Finding"
+    },
+    "T037": {
+        "group_abbr": "DISO",
+        "group_name": "Disorders",
+        "type_name": "Injury or Poisoning"
+    },
+    "T048": {
+        "group_abbr": "DISO",
+        "group_name": "Disorders",
+        "type_name": "Mental or Behavioral Dysfunction"
+    },
+    "T191": {
+        "group_abbr": "DISO",
+        "group_name": "Disorders",
+        "type_name": "Neoplastic Process"
+    },
+    "T046": {
+        "group_abbr": "DISO",
+        "group_name": "Disorders",
+        "type_name": "Pathologic Function"
+    },
+    "T184": {
+        "group_abbr": "DISO",
+        "group_name": "Disorders",
+        "type_name": "Sign or Symptom"
+    },
+    "T087": {
+        "group_abbr": "GENE",
+        "group_name": "Genes & Molecular Sequences",
+        "type_name": "Amino Acid Sequence"
+    },
+    "T088": {
+        "group_abbr": "GENE",
+        "group_name": "Genes & Molecular Sequences",
+        "type_name": "Carbohydrate Sequence"
+    },
+    "T028": {
+        "group_abbr": "GENE",
+        "group_name": "Genes & Molecular Sequences",
+        "type_name": "Gene or Genome"
+    },
+    "T085": {
+        "group_abbr": "GENE",
+        "group_name": "Genes & Molecular Sequences",
+        "type_name": "Molecular Sequence"
+    },
+    "T086": {
+        "group_abbr": "GENE",
+        "group_name": "Genes & Molecular Sequences",
+        "type_name": "Nucleotide Sequence"
+    },
+    "T083": {
+        "group_abbr": "GEOG",
+        "group_name": "Geographic Areas",
+        "type_name": "Geographic Area"
+    },
+    "T100": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Age Group"
+    },
+    "T011": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Amphibian"
+    },
+    "T008": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Animal"
+    },
+    "T194": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Archaeon"
+    },
+    "T007": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Bacterium"
+    },
+    "T012": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Bird"
+    },
+    "T204": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Eukaryote"
+    },
+    "T099": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Family Group"
+    },
+    "T013": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Fish"
+    },
+    "T004": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Fungus"
+    },
+    "T096": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Group"
+    },
+    "T016": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Human"
+    },
+    "T015": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Mammal"
+    },
+    "T001": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Organism"
+    },
+    "T101": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Patient or Disabled Group"
+    },
+    "T002": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Plant"
+    },
+    "T098": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Population Group"
+    },
+    "T097": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Professional or Occupational Group"
+    },
+    "T014": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Reptile"
+    },
+    "T010": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Vertebrate"
+    },
+    "T005": {
+        "group_abbr": "LIVB",
+        "group_name": "Living Beings",
+        "type_name": "Virus"
+    },
+    "T071": {
+        "group_abbr": "OBJC",
+        "group_name": "Objects",
+        "type_name": "Entity"
+    },
+    "T168": {
+        "group_abbr": "OBJC",
+        "group_name": "Objects",
+        "type_name": "Food"
+    },
+    "T073": {
+        "group_abbr": "OBJC",
+        "group_name": "Objects",
+        "type_name": "Manufactured Object"
+    },
+    "T072": {
+        "group_abbr": "OBJC",
+        "group_name": "Objects",
+        "type_name": "Physical Object"
+    },
+    "T167": {
+        "group_abbr": "OBJC",
+        "group_name": "Objects",
+        "type_name": "Substance"
+    },
+    "T091": {
+        "group_abbr": "OCCU",
+        "group_name": "Occupations",
+        "type_name": "Biomedical Occupation or Discipline"
+    },
+    "T090": {
+        "group_abbr": "OCCU",
+        "group_name": "Occupations",
+        "type_name": "Occupation or Discipline"
+    },
+    "T093": {
+        "group_abbr": "ORGA",
+        "group_name": "Organizations",
+        "type_name": "Health Care Related Organization"
+    },
+    "T092": {
+        "group_abbr": "ORGA",
+        "group_name": "Organizations",
+        "type_name": "Organization"
+    },
+    "T094": {
+        "group_abbr": "ORGA",
+        "group_name": "Organizations",
+        "type_name": "Professional Society"
+    },
+    "T095": {
+        "group_abbr": "ORGA",
+        "group_name": "Organizations",
+        "type_name": "Self-help or Relief Organization"
+    },
+    "T038": {
+        "group_abbr": "PHEN",
+        "group_name": "Phenomena",
+        "type_name": "Biologic Function"
+    },
+    "T069": {
+        "group_abbr": "PHEN",
+        "group_name": "Phenomena",
+        "type_name": "Environmental Effect of Humans"
+    },
+    "T068": {
+        "group_abbr": "PHEN",
+        "group_name": "Phenomena",
+        "type_name": "Human-caused Phenomenon or Process"
+    },
+    "T034": {
+        "group_abbr": "PHEN",
+        "group_name": "Phenomena",
+        "type_name": "Laboratory or Test Result"
+    },
+    "T070": {
+        "group_abbr": "PHEN",
+        "group_name": "Phenomena",
+        "type_name": "Natural Phenomenon or Process"
+    },
+    "T067": {
+        "group_abbr": "PHEN",
+        "group_name": "Phenomena",
+        "type_name": "Phenomenon or Process"
+    },
+    "T043": {
+        "group_abbr": "PHYS",
+        "group_name": "Physiology",
+        "type_name": "Cell Function"
+    },
+    "T201": {
+        "group_abbr": "PHYS",
+        "group_name": "Physiology",
+        "type_name": "Clinical Attribute"
+    },
+    "T045": {
+        "group_abbr": "PHYS",
+        "group_name": "Physiology",
+        "type_name": "Genetic Function"
+    },
+    "T041": {
+        "group_abbr": "PHYS",
+        "group_name": "Physiology",
+        "type_name": "Mental Process"
+    },
+    "T044": {
+        "group_abbr": "PHYS",
+        "group_name": "Physiology",
+        "type_name": "Molecular Function"
+    },
+    "T032": {
+        "group_abbr": "PHYS",
+        "group_name": "Physiology",
+        "type_name": "Organism Attribute"
+    },
+    "T040": {
+        "group_abbr": "PHYS",
+        "group_name": "Physiology",
+        "type_name": "Organism Function"
+    },
+    "T042": {
+        "group_abbr": "PHYS",
+        "group_name": "Physiology",
+        "type_name": "Organ or Tissue Function"
+    },
+    "T039": {
+        "group_abbr": "PHYS",
+        "group_name": "Physiology",
+        "type_name": "Physiologic Function"
+    },
+    "T060": {
+        "group_abbr": "PROC",
+        "group_name": "Procedures",
+        "type_name": "Diagnostic Procedure"
+    },
+    "T065": {
+        "group_abbr": "PROC",
+        "group_name": "Procedures",
+        "type_name": "Educational Activity"
+    },
+    "T058": {
+        "group_abbr": "PROC",
+        "group_name": "Procedures",
+        "type_name": "Health Care Activity"
+    },
+    "T059": {
+        "group_abbr": "PROC",
+        "group_name": "Procedures",
+        "type_name": "Laboratory Procedure"
+    },
+    "T063": {
+        "group_abbr": "PROC",
+        "group_name": "Procedures",
+        "type_name": "Molecular Biology Research Technique"
+    },
+    "T062": {
+        "group_abbr": "PROC",
+        "group_name": "Procedures",
+        "type_name": "Research Activity"
+    },
+    "T061": {
+        "group_abbr": "PROC",
+        "group_name": "Procedures",
+        "type_name": "Therapeutic or Preventive Procedure"
+    }
+}
