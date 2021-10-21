@@ -43,5 +43,5 @@ class UMLSLinker(object):
                         "TUI_Name": tui_name,
                         "Prob": prob
                     })
-                linked_ents.append(umls_concepts)
+                linked_ents.append((str(subspan), umls_concepts))
         return linked_ents
