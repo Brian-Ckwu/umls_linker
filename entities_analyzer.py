@@ -1,8 +1,8 @@
 import pandas as pd
 
 class EntitiesAnalyzer(object):
-    def __init__(self, df):
-        self._df = df
+    def __init__(self, df: pd.DataFrame):
+        self._df = df.drop_duplicates()
         self._cats = ["ss", "dx", "drug", "surgery", "non-surgery", "others"]
     
     @property
@@ -24,6 +24,10 @@ class EntitiesAnalyzer(object):
         return scdf
     
     @staticmethod
+    def count_tui_name(df: pd.DataFrame) -> pd.Series:
+        return df.groupby("tui_name").size().sort_values(ascending=False)
+    
+    @staticmethod
     def get_df_by_cat(df: pd.DataFrame, cat: str) -> pd.DataFrame:
         return df[df["category"] == cat]
     
@@ -32,3 +36,7 @@ class EntitiesAnalyzer(object):
         s = df.groupby("term")["span"].nunique() == sc # Series of the terms of which the span count equals sc
         terms = s[s == True].index
         return df[df["term"].isin(terms)]
+    
+    @staticmethod
+    def get_df_by_tui_name(df: pd.DataFrame, tui_name: str) -> pd.DataFrame:
+        return df[df["tui_name"] == tui_name]
