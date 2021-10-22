@@ -5,6 +5,10 @@ class EntitiesAnalyzer(object):
         self._df = df
         self._cats = ["ss", "dx", "drug", "surgery", "non-surgery", "others"]
     
+    @property
+    def df(self):
+        return self._df
+    
     def count_spans(self) -> pd.DataFrame:
         # scdf: span count DataFrame
         scdf = self._df.groupby(["category", "term"])["span"].nunique().to_frame().reset_index() # DataFrame of number of linked spans
@@ -14,3 +18,11 @@ class EntitiesAnalyzer(object):
         scdf = scdf.append(scdf.sum(axis=0), ignore_index=True).rename(index={4: "total"}) # sum rows
         scdf["total"] = scdf.sum(axis=1) # sum columns
         return scdf
+    
+    @staticmethod
+    def get_df_by_cat(df: pd.DataFrame, cat: str) -> pd.DataFrame:
+        return df[df["category"] == cat]
+    
+    @staticmethod
+    def get_df_by_span_count(df: pd.DataFrame, sc: int) -> pd.DataFrame:
+        return pd.DataFrame()
