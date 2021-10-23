@@ -1,3 +1,4 @@
+import re
 import json
 import spacy
 import scispacy
@@ -5,7 +6,7 @@ from scispacy.abbreviation import AbbreviationDetector
 from scispacy.linking import EntityLinker
 
 class UMLSLinker(object):
-    def __init__(self):
+    def __init__(self, abbr2full: dict, wrng2corr: dict):
         # load sciSpacy pipelines
         self._nlp = spacy.load("en_core_sci_lg")
         self._nlp.add_pipe("abbreviation_detector")
@@ -15,6 +16,10 @@ class UMLSLinker(object):
         # UMLS TUI data
         with open("./umls_data/tui.json") as f:
             self._tui2info = json.load(f)
+        # for abbreviations and term correction
+        self._abbr2full = abbr2full
+        self._wrng2corr = wrng2corr
+        self._chpattern = r"[\u4e00-\u9fff]+"
     
     def get_tui_name(self, tui: str) -> str:
         return self._tui2info[tui]["type_name"]
@@ -22,6 +27,21 @@ class UMLSLinker(object):
     def choose_tui(self, types: list) -> str:
         # some rules (e.g. the node closest to the leaves)
         return types[0]
+    
+    def conv_abbr(self, t: str) -> str:
+        if t in self._abbr2full:
+            t = self._abbr2full[t]
+        return t
+    
+    def conv_wrng(self, t: str) -> str:
+        if t in self._wrng2corr:
+            t = self._wrng2corr[t]
+        return t
+    
+    def has_chins(self, t: str) -> bool:
+        if re.search(pattern=self._chpattern, string=t):
+            return True
+        return False
     
     def link_term(self, t: str) -> list:
         linked_ents = list()
