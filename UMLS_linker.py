@@ -10,7 +10,7 @@ class UMLSLinker(object):
         # load sciSpacy pipelines
         self._nlp = spacy.load("en_core_sci_lg")
         self._nlp.add_pipe("abbreviation_detector")
-        self._nlp.add_pipe("scispacy_linker", config={"resolve_abbreviations": True, "threshold": 0, "linker_name": "umls", "max_entities_per_mention": 30})
+        self._nlp.add_pipe("scispacy_linker", config={"resolve_abbreviations": True, "threshold": 0, "linker_name": "umls", "max_entities_per_mention": 5})
         # UMLS concept linker
         self._linker = self._nlp.get_pipe("scispacy_linker")
         # UMLS TUI data
@@ -21,7 +21,7 @@ class UMLSLinker(object):
         self._wrng2corr = wrng2corr
         self._chpattern = r"[\u4e00-\u9fff]+"
         # major tui names
-        self._major_tui_names = set(major_tui_names)
+        self._major_tui_names = major_tui_names
     
     def get_tui_name(self, tui: str) -> str:
         return self._tui2info[tui]["type_name"]
