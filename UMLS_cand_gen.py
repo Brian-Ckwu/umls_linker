@@ -6,13 +6,20 @@ from typing import List
 from scispacy.candidate_generation import CandidateGenerator, MentionCandidate
 
 class UMLSCandidateGenerator(object):
-    def __init__(self):
-        self._cand_gen = CandidateGenerator(name="umls")
-        self._fields = ["term", "alias", "similarity", "cui", "cui_name", "tui", "tui_name"]
+    def __init__(self, kb: str):
+        self._cand_gen = CandidateGenerator(name=kb)
+        self._fields = ["term", "alias", "similarity", "cui", "cui_name", "tui", "tui_name", "source"]
         # UMLS TUI data
-        file_path = os.path.join(os.path.dirname(__file__), r".\umls_data\tui.json")
-        with open(file_path) as f:
+        tui_file = os.path.join(os.path.dirname(__file__), r".\umls_data\tui.json")
+        with open(tui_file) as f:
             self._tui2info = json.load(f)
+        # SNOMED_CT CUIs data
+        snomedct_file = os.path.join(os.path.dirname(__file__), r".\umls_data\snomed_cuis.txt")
+        self._snomed_cuis = set()
+        with open(snomedct_file) as f:
+            for line in f:
+                cui = line.rstrip()
+                self._snomed_cuis.add(cui)
 
     def find_cands(self, medical_term: str, k: int = 5) -> List[MentionCandidate]: # when the cand_gen object is called as a function
         return self._cand_gen([medical_term], k)[0]
@@ -31,8 +38,11 @@ class UMLSCandidateGenerator(object):
     
         concept = self._cand_gen.kb.cui_to_entity[cand_tuple[2]]
         d["alias"], d["similarity"], d["cui"] = cand_tuple
-        d["cui_name"], d["tui"] = concept.canonical_name, concept.types[0], # concept.types[0] might not be the most probable way
-        d["tui_name"] = self._tui2info[d["tui"]]["type_name"]
+        d["cui_name"] = concept.canonical_name # concept.types[0] might not be the most probable way
+        if concept.types:
+            d["tui"] = concept.types[0]
+            d["tui_name"] = self._tui2info[d["tui"]]["type_name"]
+        d["source"] = "SNOMED_CT" if d["cui"] in self._snomed_cuis else "others"
 
         return d
     
