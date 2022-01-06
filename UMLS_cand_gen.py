@@ -62,7 +62,7 @@ class UMLSCandidateGenerator(object):
         
         return pd.DataFrame(lex_d)
 
-class SNOMEDCTCandidateGenerator(UMLSCandidateGenerator):
+class SNOMEDRxCandidateGenerator(UMLSCandidateGenerator):
     def __init__(self):
         super().__init__(kb="umls")
         # SNOMED_CT CUIs data
@@ -72,6 +72,15 @@ class SNOMEDCTCandidateGenerator(UMLSCandidateGenerator):
             for line in f:
                 cui = line.rstrip()
                 self._snomed_cuis.add(cui)
+        # RxNorm CUIs data
+        rxnorm_file = os.path.join(os.path.dirname(__file__), r".\umls_data\rxnorm_cuis.txt")
+        self._rxnorm_cuis = set()
+        with open(rxnorm_file) as f:
+            for line in f:
+                cui = line.rstrip()
+                self._rxnorm_cuis.add(cui)
+        # SNOMED + RxNorm Cuis
+        self._whole_cuis = self._snomed_cuis | self._rxnorm_cuis
         # Resolve to a unique concept and alias
         self._unique = True
     
@@ -82,7 +91,7 @@ class SNOMEDCTCandidateGenerator(UMLSCandidateGenerator):
         cands = self._cand_gen([medical_term], k)[0]
         snomed_cands = list()
         for cand in cands:
-            if cand.concept_id in self._snomed_cuis:
+            if cand.concept_id in self._whole_cuis:
                 snomed_cands.append(cand)
                 if self._unique:
                     break
